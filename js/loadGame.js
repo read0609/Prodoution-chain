@@ -42,18 +42,18 @@ var loadGameEnd;
       src: './js/define.js',
       lookFor: 'define'
     },
-    {
-      src: './js/MyMenu.js',
-      lookFor: 'MyMenu'
-    },
     /*{
-      src: './js/character.js',
-      lookFor: 'Character'
-    },
-    {
-      src: './js/myGameLevel1.js',
-      lookFor: 'MyGame'
+      src: './js/MyIndex.js',
+      lookFor: 'MyIndex'
     },*/
+    /*{
+      src: './js/AgriculturalArea/cow.js',
+      lookFor: 'cow'
+    },*/
+    {
+      src: './js/AgriculturalArea/AgriculturalArea.js',
+      lookFor: 'AgriculturalArea'
+    },
     {
       src: './js/mainGame.js'
     }

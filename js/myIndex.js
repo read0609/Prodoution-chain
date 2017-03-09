@@ -1,4 +1,4 @@
-var MyMenu = Framework.exClass(Framework.GameMainMenu, {
+var MyIndex = Framework.exClass(Framework.GameMainMenu, {
   //初始化loadingProgress需要用到的圖片
   initializeProgressResource: function() {
     this.loading = new Framework.Sprite(define.imagePath + 'loading.jpg');
@@ -21,7 +21,7 @@ var MyMenu = Framework.exClass(Framework.GameMainMenu, {
   },
 
   load: function() {
-    this.background = new Framework.Sprite(define.imagePath + 'index.jpg');
+    this.index_background = new Framework.Sprite(define.imagePath + 'index.jpg');
 
     this.isTouchArrow = false;
     this.previousTouch = {
@@ -41,14 +41,16 @@ var MyMenu = Framework.exClass(Framework.GameMainMenu, {
       y: Framework.Game.getCanvasHeight() / 2
     };
 
-    this.background.position = {
-      x: 0,
-      y: 0
+    this.index_background.position = {
+      x: Framework.Game.getCanvasWidth() / 2,
+      y: Framework.Game.getCanvasHeight() / 2
     };
 
-    this.center.attach(this.background);
+    this.index_background.scale = 0.8;
+
+    this.center.attach(this.index_background);
     this.rootScene.attach(this.center);
-    this.rootScene.attach(this.background);
+    this.rootScene.attach(this.index_background);
 
   },
 
