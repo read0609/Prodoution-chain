@@ -4,11 +4,11 @@ var Control = Framework.Class(Framework.Level, {
     this.isPlayed = false;
 
     //背景設定
-    /*this.Control = new Framework.Sprite(define.imagePath + 'all_menu.png');
+    this.Control = new Framework.Sprite(define.imagePath + 'all_menu.png');
     this.Control.position = {
       x: Framework.Game.getCanvasWidth() / 2,
       y: Framework.Game.getCanvasHeight() / 2
-    }*/
+    }
 
     //控制鈕的圖片路徑
     var AgriAreaPath = define.imagePath + 'buttomOfCow1.png';
@@ -76,9 +76,9 @@ var Control = Framework.Class(Framework.Level, {
     this.center.attach(this.button_Restaurant.sprite);
     this.center.attach(this.button_Bussiness.sprite);
 
-    //this.rootScene.attach(this.BackGround.sprite);
-    //this.rootScene.attach(this.Control);
-    this.BackGround.run();
+    this.rootScene.attach(this.BackGround.sprite);
+    this.rootScene.attach(this.Control);
+    //this.BackGround.run();
     this.rootScene.attach(this.center);
 
     //this.BackGround.sprite.start();
@@ -96,7 +96,7 @@ var Control = Framework.Class(Framework.Level, {
     };
     if (this.previousTouch.x > this.button_AgriArea.sprite.upperLeft.x && this.previousTouch.x < this.button_AgriArea.sprite.upperRight.x && this.previousTouch.y > this.button_AgriArea.sprite.upperLeft.y && this.previousTouch.y < this.button_AgriArea.sprite.lowerLeft.y) {
       this.BackGround.BackIndex = this.button_AgriArea.BackIndex;
-      this.BackGround.run();
+      //this.BackGround.run();
     }
     if (this.previousTouch.x > this.button_FeedingArea.sprite.upperLeft.x && this.previousTouch.x < this.button_FeedingArea.sprite.upperRight.x && this.previousTouch.y > this.button_FeedingArea.sprite.upperLeft.y && this.previousTouch.y < this.button_FeedingArea.sprite.lowerLeft.y) {
       this.BackGround.BackIndex = this.button_FeedingArea.BackIndex;
