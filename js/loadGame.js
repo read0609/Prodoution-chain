@@ -42,17 +42,17 @@ var loadGameEnd;
       src: './js/define.js',
       lookFor: 'define'
     },
-    /*{
-      src: './js/MyIndex.js',
-      lookFor: 'MyIndex'
-    },*/
-    /*{
-      src: './js/AgriculturalArea/cow.js',
-      lookFor: 'cow'
-    },*/
     {
-      src: './js/AgriculturalArea/AgriculturalArea.js',
-      lookFor: 'AgriculturalArea'
+      src: './js/Control/button.js',
+      lookFor: 'button'
+    },
+    {
+      src: './js/Control/BackGround.js',
+      lookFor: 'BackGround'
+    },
+    {
+      src: './js/Control/Control.js',
+      lookFor: 'Control'
     },
     {
       src: './js/mainGame.js'

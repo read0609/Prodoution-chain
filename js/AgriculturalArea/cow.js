@@ -1,6 +1,12 @@
-var cow = function(image, options) {
+var cow = function(options) {
+
+  var cows = [
+    define.imagePath + 'cow_action1.png',
+    define.imagePath + 'cow_action2.png'
+  ];
+
   this.sprite = new Framework.AnimationSprite({
-    url: image,
+    url: cows,
     loop: true,
     speed: 2
   });
@@ -13,7 +19,10 @@ var cow = function(image, options) {
   this.sprite.rotation = (Framework.Util.isUndefined(options.rotation)) ? 0 : options.rotation;
 
   this.run = function() {
-    this.sprite.start();
+    this.sprite.start({
+      from: 0,
+      to: 1
+    });
   };
 
   this.run();

@@ -4,8 +4,13 @@
   Index: new MyIndex()
 });*/
 Framework.Game.addNewLevel({
-  Agricultural_area: new AgriculturalArea()
+  Game_Control: new Control()
 });
+/*Framework.Game.addNewLevel({
+  Agricultural_area: new AgriculturalArea()
+});*/
+
+
 
 //讓Game開始運行
 Framework.Game.start();
